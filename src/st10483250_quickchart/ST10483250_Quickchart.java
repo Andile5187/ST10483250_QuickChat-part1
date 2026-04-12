@@ -32,18 +32,18 @@ Scanner input=new Scanner(System.in);
 // here we are checking the password if it reaches the password requirment
     boolean checkPasswordComplexity(String password ){
         boolean hasUpperCase=false;
-        boolean hasNumber=false;
+        boolean hasDigit=false;
         boolean hasSpecial=false;
         
-         if (password.length()<8){
+         if (password.length()>8){
          
-             for(int i=0;1<password.length();i++)  {
-        char ch=password.charAt(i);
-         if(Character.isUpperCase(ch)){
+             for(char c: password.toCharArray())  {
+        
+         if(Character.isUpperCase(c)){
          hasUpperCase=true;
-         }else if(Character.isDigit(ch)){
-         hasNumber=true;
-         }else if(!Character.isLetterOrDigit(ch)){
+         }else if(Character.isDigit(c)){
+         hasDigit=true;
+         }else if(!Character.isLetterOrDigit(c)){
          hasSpecial=true;
          }
         
@@ -57,12 +57,13 @@ Scanner input=new Scanner(System.in);
                System.out.println("Password incorrect,please try again");
               return false;
          }
-    return hasUpperCase&&hasNumber&& hasSpecial;
+    return hasUpperCase&&hasDigit&& hasSpecial;
     }
     // here we are checking the CellPhoneNumber  if it reaches the CellPhoneNumber requirment
    boolean checkCellPhoneNumber(String cellPhoneNumber){
-   if (cellPhoneNumber.length() == 10 && cellPhoneNumber.matches("\\d+")&& cellPhoneNumber.contains("+27")){
-     return true;
+   if ( cellPhoneNumber.startsWith("+")&&cellPhoneNumber.length()==11){
+       System.out.println("Cell Phone number successfully added");
+       return true;
    } 
    else{
       System.out.println(" cell phone number incorrectly formated or does not contain international code");
@@ -119,9 +120,8 @@ Scanner input=new Scanner(System.in);
                System.out.println("Too many failed attempts.Accountis locked");
            }
         }
-    }
+   }
 }
-
 
                
            
