@@ -91,37 +91,30 @@ Scanner input=new Scanner(System.in);
     }
    // here we are creating a userlogin method
     void userlogin() {
-        if (storeUsername == null) {
-            System.out.println("faild login");
-            return;
-        }
+        
+        
+      System.out.println("\n======== login ==========");
+               System.out.println("Enter Username");
+        String Username = input.nextLine();
+        System.out.println("Enter Password");
+        String Password = input.nextLine();
+        System.out.println("Enter CellPhoneNumber");
+        String CellPhoneNumber = input.nextLine();
+        storeUsername= Username;
+        storePassword = Password;
+        storeCellPhoneNumber = CellPhoneNumber;
+        if (checkUsername(storeUsername) && checkPasswordComplexity(storePassword) && checkCellPhoneNumber(storeCellPhoneNumber)) {
+            System.out.println("login successful!");
+        } else {
+            System.out.println("login faild");
             
-        int attempts = 3;
-        boolean success = false;
-        System.out.println("\n========LOGIN ==========");
-
-        while (attempts > 0 && !success) {
-            System.out.println("Enter Username");
-            String Username = input.nextLine();
-            System.out.println("Enter Password");
-            String Password = input.nextLine();
-            System.out.println("Enter CellPhoneNumber");
-            String CellPhoneNumber = input.nextLine();
-           if(checkUsername(storeUsername)&&checkPasswordComplexity(storePassword)&&checkCellPhoneNumber(storeCellPhoneNumber)){
-               System.out.println("successful login");
-               success=true;
-           }else{
-           attempts--;
-           if(attempts>0){
-               System.out.println("incorrect details.Attempt left"+attempts);
-           }
-           }
-           if(!success){
-               System.out.println("Too many failed attempts.Accountis locked");
-           }
         }
+                
+                
+        
+    }  
    }
-}
+
 
                
            
