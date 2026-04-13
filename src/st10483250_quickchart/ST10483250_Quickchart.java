@@ -130,6 +130,7 @@ public class ST10483250_Quickchart {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
         // TODO code application logic here
         // here we are constracting the class that we created to the main class so it can run
