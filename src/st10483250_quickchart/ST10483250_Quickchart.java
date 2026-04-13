@@ -59,6 +59,7 @@ Scanner input=new Scanner(System.in);
          }
     return hasUpperCase&&hasDigit&& hasSpecial;
     }
+    
     // here we are checking the CellPhoneNumber  if it reaches the CellPhoneNumber requirment
    boolean checkCellPhoneNumber(String cellPhoneNumber){
    if ( cellPhoneNumber.startsWith("+")&&cellPhoneNumber.length()==11){
@@ -91,7 +92,7 @@ Scanner input=new Scanner(System.in);
     }
    // here we are creating a userlogin method
     void userlogin() {
-        
+       
         
       System.out.println("\n======== login ==========");
                System.out.println("Enter Username");
