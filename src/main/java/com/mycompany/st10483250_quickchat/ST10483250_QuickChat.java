@@ -144,7 +144,7 @@ class message {
     }
 
     
-     boolean checkMessageID() {
+     boolean checkMessageID() { 
         return messageID.length() <= 10;
     }
 
