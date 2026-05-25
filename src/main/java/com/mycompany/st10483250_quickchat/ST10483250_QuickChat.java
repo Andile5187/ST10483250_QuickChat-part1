@@ -106,7 +106,7 @@ class login {
         }
     }
 }
-class messegeData {
+class messegeData { 
     
 String messageID;
 int messageNumber;
