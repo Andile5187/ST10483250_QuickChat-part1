@@ -1,0 +1,42 @@
+{
+  "messageID": "7133080168",
+  "messageNumber": 1,
+  "recipient": "+27718693002",
+  "message": "hi mike can you join us for dinner tonight",
+  "messageHash": "71:1:HITONIGHT"
+}{
+  "messageID": "3419591328",
+  "messageNumber": 1,
+  "recipient": "+27718693002",
+  "message": "hi mike, can you join us for dinner tonight?",
+  "messageHash": "34:1:HITONIGHT?",
+  "flag": "sent"
+}{
+  "messageID": "3419591328",
+  "messageNumber": 1,
+  "recipient": "+27718693002",
+  "message": "hi mike, can you join us for dinner tonight?",
+  "messageHash": "34:1:HITONIGHT?",
+  "flag": "stored"
+}{
+  "messageID": "6294156403",
+  "messageNumber": 2,
+  "recipient": "+27857597588",
+  "message": "hi keegan, did you receive the payment?",
+  "messageHash": "62:2:HIPAYMENT?",
+  "flag": "stored"
+}{
+  "messageID": "3443966357",
+  "messageNumber": 1,
+  "recipient": "+27718693002",
+  "message": "Hi Mike,can you join us for dinner tonight?",
+  "messageHash": "34:1:HITONIGHT?",
+  "flag": "sent"
+}{
+  "messageID": "3443966357",
+  "messageNumber": 1,
+  "recipient": "+27718693002",
+  "message": "Hi Mike,can you join us for dinner tonight?",
+  "messageHash": "34:1:HITONIGHT?",
+  "flag": "stored"
+}
