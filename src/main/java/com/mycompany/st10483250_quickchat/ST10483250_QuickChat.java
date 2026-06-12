@@ -223,7 +223,7 @@ class message {
         disregardedMessages[disregardCount]= messageText;
         disregardCount++;
         }
-    }
+    } 
    static String displayAllStoredSenderRecipient(){
    if(storedCount ==0)return"no stored messages found.";
    StringBuilder sb= new StringBuilder();
