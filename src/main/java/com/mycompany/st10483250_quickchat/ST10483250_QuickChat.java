@@ -267,7 +267,7 @@ class message {
     }
     if (!found)return "No messages found for recipient:"+recipient;
     return"\nMessages for"+recipient+":\n"+sb.toString();
-     }
+     } 
     static String deleteByHash(String hash){
     for(int i=0;i<storedCount;i++){
     if(storedMessages[i].messageHash.equalsIgnoreCase(hash)){
