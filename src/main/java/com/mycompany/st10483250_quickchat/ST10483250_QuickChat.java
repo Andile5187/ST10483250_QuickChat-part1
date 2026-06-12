@@ -234,7 +234,7 @@ class message {
        .append("Flag:").append(storedMessages[i].flag).append("\n");
    }
    return sb.toString();
-   }
+   } 
      static String displayLongestMessage(){
      if(storedCount ==0)return "no stored messages found.";
      messageData longest =storedMessages[0];
