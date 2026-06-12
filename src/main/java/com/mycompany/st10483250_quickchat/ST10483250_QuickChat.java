@@ -246,7 +246,7 @@ class message {
      return"\nLongest message:\n Recipient"+longest.recipient+
              "\n message:"+longest.message+
              "\n Length"+longest.message.length()+"characters:";
-     }
+     } 
      static String searchByMessageID(String id){
      for(int i=0;i<storedCount;i++){
      if(storedMessages[i].messageID.equalsIgnoreCase(id)){
