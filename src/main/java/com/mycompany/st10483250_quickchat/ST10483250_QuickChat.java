@@ -281,7 +281,7 @@ class message {
       }
     }
     return "Message hash not found.";
-    }
+    } 
     static String displayReport(){
     if(storedCount ==0)return "no stored messages to report.";
     StringBuilder sb= new StringBuilder();
